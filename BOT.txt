@@ -1,0 +1,2 @@
+while :; do curl $(curl $(curl 'https://pastebin.com/raw/dRMrHbxX') |sed 's/}]}/\n/g'|sed '/"available_capacity":y0\|COVAXIN/d' |sed 's/,/%0A/g'|sed 's/\[//g'|sed 's/\]//g'|sed 's/{//g'|sed 's/}//g'|sed 's/"//g'|sed 's/\s\+/+/g'|grep 'angappara\|ttingal\|hirayinkeezhu\|erumathura\|aliyathura\|hycaud\|695304'|sed "s|^|https://api.telegram.org/bot1669913040:AAHZ6Wl5SiWiUuyA8QvlJ55oadXZeYmRGQ0/sendMessage?chat_id=-537353498\&text=|"); done
+/bin/bash -c "envsubst '\$PORT' < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf" && nginx -g 'daemon off;'
